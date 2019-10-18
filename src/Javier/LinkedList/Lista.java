@@ -16,6 +16,8 @@ public class Lista {
         else {
             nodo.setSiguiente(lista[puntero]);
             cargarLista(lista, ++puntero, nodo.getSiguiente());
+            if (nodo.getSiguiente() == null)
+                this.tail = nodo;
         }
     }
 
@@ -34,12 +36,12 @@ public class Lista {
 
     //Imprimir datos
     public void initImprimir(){
-        System.out.println("Head├>");
+        System.out.print("|Head|->");
         toStringLista(this.head);
     }
     private void toStringLista(Nodo head) {
         if (head == null)
-            System.out.print("null");
+            System.out.print("|Tail|");
         else{
             System.out.print( "|" + head.getDato() + "|-->");
             toStringLista(head.getSiguiente());

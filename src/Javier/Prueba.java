@@ -13,7 +13,6 @@ public class Prueba {
 		element.trasponerMatriz();
 		element.imprimirMatrizAmbas();
 		*/
-
 		
 		//ordenar y mostrar matriz
 		OrdenarArreglo prueba = new OrdenarArreglo();
