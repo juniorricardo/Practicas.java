@@ -1,58 +1,72 @@
 package Javier.LinkedList;
 
 public class Lista {
+    //Atributos
     private Nodo head;
     private Nodo tail;
-    private int contador = 0;
+    private int contador;
+
+    public Nodo getHead() {
+        return head;
+    }
+
+    public Nodo getTail() {
+        return tail;
+    }
 
     //Cargar valores
     public void initCarga(int[] lista) {
         this.head = new Nodo(lista[0]);
         cargarLista(lista, 1, this.head);
     }
+
     private void cargarLista(int[] lista, int puntero, Nodo nodo) {
-        if (puntero == lista.length)
-            System.out.println("Fin de carga...");
-        else {
+        if (puntero == lista.length) {
+            this.tail = nodo;
+            System.out.println("Se cargaron los nodos correctamente.");
+        } else {
             nodo.setSiguiente(lista[puntero]);
             cargarLista(lista, ++puntero, nodo.getSiguiente());
-            if (nodo.getSiguiente() == null)
-                this.tail = nodo;
         }
     }
 
     //Iniciar conteo
     public void initConteo() {
-        contarNodos(this.head);
+        this.contador = 0;
+//        contRecursivo(this.head);
+        contIterativo();
     }
-    private void contarNodos(Nodo elemento) {
+
+    private void contRecursivo(Nodo elemento) {
         if (elemento == null)
             System.out.println("Total de nodos: " + contador);
         else {
             contador++;
-            contarNodos(elemento.getSiguiente());
+            contRecursivo(elemento.getSiguiente());
+        }
+    }
+
+    private void contIterativo() {
+        Nodo puntero = this.head;
+        while (puntero != null) {
+            contador += 1;
+            puntero = puntero.getSiguiente();
         }
     }
 
     //Imprimir datos
-    public void initImprimir(){
-        System.out.print("|Head|->");
+    public void initImprimir() {
+        System.out.print("> Linked list|»» ");
         toStringLista(this.head);
     }
+
     private void toStringLista(Nodo head) {
         if (head == null)
-            System.out.print("|Tail|");
-        else{
-            System.out.print( "|" + head.getDato() + "|-->");
+            System.out.print("null");
+        else {
+            System.out.print("[" + head.getDato() + "]-> ");
             toStringLista(head.getSiguiente());
         }
     }
 
-
-    public Nodo getHead() {
-        return head;
-    }
-    public Nodo getTail() {
-        return tail;
-    }
 }
