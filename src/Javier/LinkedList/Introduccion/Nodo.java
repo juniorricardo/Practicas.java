@@ -1,4 +1,4 @@
-package Javier.LinkedList;
+package Javier.LinkedList.Introduccion;
 
 public class Nodo {
     //Atributos
@@ -18,6 +18,9 @@ public class Nodo {
         this.siguiente = new Nodo(siguiente);
     }
 
+    public void setSiguiente(Nodo nodo){
+        this.siguiente = nodo;
+    }
     public Nodo getSiguiente(){
         return this.siguiente;
     }

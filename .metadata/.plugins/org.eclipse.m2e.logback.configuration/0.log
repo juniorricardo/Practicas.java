@@ -1871,3 +1871,4 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 2019-10-18 09:05:46,706 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
 2019-10-18 09:05:46,799 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-10-18 09:05:46,799 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jrhuamani\Downloads\gs-serving-web-content-master\complete\src\test\resources
+2019-10-21 10:22:48,124 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.

@@ -1,4 +1,4 @@
-package Javier.LinkedList;
+package Javier.LinkedList.Introduccion;
 
 public class Lista {
     //Atributos
@@ -19,7 +19,6 @@ public class Lista {
         this.head = new Nodo(lista[0]);
         cargarLista(lista, 1, this.head);
     }
-
     private void cargarLista(int[] lista, int puntero, Nodo nodo) {
         if (puntero == lista.length) {
             this.tail = nodo;
@@ -30,13 +29,26 @@ public class Lista {
         }
     }
 
+    //Insertar nuevo Nodo
+    public void agregarNodo(Nodo nodo, int pos){
+        Nodo puntero = this.head;
+        int actual = 1;
+        while(puntero != null){
+            if(pos == actual){
+                nodo = puntero.getSiguiente();
+                puntero.setSiguiente(nodo);
+            }
+            pos += 1;
+            puntero = puntero.getSiguiente();
+        }
+    }
+
     //Iniciar conteo
     public void initConteo() {
         this.contador = 0;
 //        contRecursivo(this.head);
         contIterativo();
     }
-
     private void contRecursivo(Nodo elemento) {
         if (elemento == null)
             System.out.println("Total de nodos: " + contador);
@@ -45,7 +57,6 @@ public class Lista {
             contRecursivo(elemento.getSiguiente());
         }
     }
-
     private void contIterativo() {
         Nodo puntero = this.head;
         while (puntero != null) {
@@ -59,7 +70,6 @@ public class Lista {
         System.out.print("> Linked list|»» ");
         toStringLista(this.head);
     }
-
     private void toStringLista(Nodo head) {
         if (head == null)
             System.out.print("null");
