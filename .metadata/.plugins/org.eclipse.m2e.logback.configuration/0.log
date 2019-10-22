@@ -1872,3 +1872,12 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 2019-10-18 09:05:46,799 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-10-18 09:05:46,799 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\jrhuamani\Downloads\gs-serving-web-content-master\complete\src\test\resources
 2019-10-21 10:22:48,124 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2019-10-21 10:51:43,181 [Worker-15: Creating project "calculadora"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.curso.spring:calculadora:0.0.1-SNAPSHOT @ C:\Users\jrhuamani\Practicas.java\calculadora\pom.xml.
+2019-10-21 10:51:47,085 [Worker-15: Creating project "calculadora"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculadora/src/main/java
+2019-10-21 10:51:47,086 [Worker-15: Creating project "calculadora"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /calculadora/src/main/resources
+2019-10-21 10:51:47,086 [Worker-15: Creating project "calculadora"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /calculadora/src/test/java
+2019-10-21 10:51:47,087 [Worker-15: Creating project "calculadora"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /calculadora/src/test/resources
+2019-10-21 10:51:47,863 [Worker-6: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-10-21 10:51:47,875 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-10-21 10:51:47,877 [Worker-6: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-10-21 10:51:47,887 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

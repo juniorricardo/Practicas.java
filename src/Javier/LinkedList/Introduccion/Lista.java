@@ -1,7 +1,7 @@
 package Javier.LinkedList.Introduccion;
 
 public class Lista {
-    //Atributos
+
     private Nodo head;
     private Nodo tail;
     private int contador;
