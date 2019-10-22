@@ -4,7 +4,6 @@ public class Prueba {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-		
 		//metodos para invertir matriz
 		/*MatrizTraspuesta element = new MatrizTraspuesta(4);
 		element.cargarMatriz();
