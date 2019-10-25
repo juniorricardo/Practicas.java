@@ -80,27 +80,7 @@ public class RegJugadores {
         String llave = lector.nextLine();
         if (jugadores.containsKey(llave)) {
             ArrayList<String> cambiarReg = jugadores.get(llave);
-            System.out.println("Ingrese el dato que desea cambiar:");
-            switch (lector.nextLine()) {
-                case "nombre":
-                    System.out.println("Ingrese nuevo 'nombre':");
-                    cambiarReg.set(0, lector.nextLine());
-                    jugadores.replace(llave, cambiarReg);
-                    break;
-                case "apellido":
-                    System.out.println("Ingrese nuevo 'apellido':");
-                    cambiarReg.set(1, lector.nextLine());
-                    jugadores.replace(llave, cambiarReg);
-                    break;
-                case "email":
-                    System.out.println("Ingrese nuevo 'email':");
-                    cambiarReg.set(2, lector.nextLine());
-                    jugadores.replace(llave, cambiarReg);
-                    break;
-                default:
-                    System.out.println("Opcion invalidad, saliendo...");
-                    break;
-            }
+
         } else
             System.out.println("El usuario no existe.");
         listaRegistro();

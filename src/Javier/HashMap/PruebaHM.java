@@ -14,6 +14,5 @@ public class PruebaHM {
         RegJugadores reg = new RegJugadores();
         reg.listaRegistro();
 
-        reg.cambiarReg();
     }
 }
