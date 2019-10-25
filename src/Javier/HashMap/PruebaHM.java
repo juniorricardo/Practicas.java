@@ -12,7 +12,9 @@ public class PruebaHM {
         elemento.imprimirDic();*/
 
         RegJugadores reg = new RegJugadores();
-        reg.listaRegistro();
+        reg.listarRegistro();
+        reg.cambiarKey();
+        reg.cambiarValue();
 
     }
 }

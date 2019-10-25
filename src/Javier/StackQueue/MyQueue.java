@@ -4,23 +4,24 @@ import java.util.ArrayList;
 
 public class MyQueue {
 
-    private ArrayList<Object> cola;
+    private final ArrayList<Object> cola;
 
-    public MyQueue(){
+    public MyQueue() {
         cola = new ArrayList<>();
     }
-    public void add(Object item){
-        this.add(item);
+
+    public void agregar(Object item) {
+        this.cola.add(item);
     }
 
-    public Object remove(){
+    public Object remove() {
         Object head = this.cola.get(0);
         this.cola.remove(0);
         return head;
     }
 
-    public void imprimir(){
-        for (Object item: cola) {
+    public void imprimir() {
+        for (Object item : cola) {
             System.out.println(" " + item.toString());
         }
     }

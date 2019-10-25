@@ -4,11 +4,25 @@ public class PStackQueue {
 
     public static void main(String[] args) {
 
-        correrStack();
+//        correrStack();
+
+        correrQueue();
 
 
+    }
 
-
+    private static void correrQueue() {
+        MyQueue cola = new MyQueue();
+        cola.agregar("Hola");
+        cola.agregar("me");
+        cola.agregar("fui");
+        cola.agregar("⚽");
+        cola.imprimir();
+        System.out.println("cola.remove() = " + cola.remove());
+        cola.imprimir();
+        System.out.println("cola.remove() = " + cola.remove());
+        System.out.println("cola.remove() = " + cola.remove());
+        System.out.println("cola.remove() = " + cola.remove());
     }
 
     public static void correrStack(){

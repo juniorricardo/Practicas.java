@@ -2,9 +2,9 @@ package Javier.HashMap;
 
 import java.util.HashMap;
 
-public class PracticaHashMap extends HashMap{
+public class PracticaHashMap{
 
-    private HashMap<String, String> diccionario = new HashMap<String,String>();
+    private final HashMap<String, String> diccionario = new HashMap<>();
     private int cantidad;
 
     public void cargarDiccionario(){
@@ -21,9 +21,10 @@ public class PracticaHashMap extends HashMap{
         return this.diccionario.get(valor);
     }
 
-    public void imprimirDic(){
-        for (String i : diccionario.keySet())
-            System.out.println("# " + i + ": \n\t" + diccionario.get(i));
+    private void imprimirDic(){
+        /*for (String i : diccionario.keySet())
+            System.out.println("# " + i + ": \n\t" + diccionario.get(i));*/
+        diccionario.forEach((k,v)->System.out.println("# " + k + ": " + v));
     }
     public int getCantidad(){
         return this.cantidad;
