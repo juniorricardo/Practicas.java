@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class MyQueue {
 
-    ArrayList<Object> cola;
+    private ArrayList<Object> cola;
+
     public MyQueue(){
         cola = new ArrayList<>();
     }
