@@ -8,8 +8,16 @@ public class Main {
     public static void main(String[] args) {
 
 
+        RandomPolinomio elemento = new RandomPolinomio(3);
+        elemento.generar();
+        System.out.println("f(x) = " + elemento.getPolinomio());
+
+        elemento.calcular();
+
+
     }
 
+    //Triangulo
     public static void trianguloCalculo(){
         TrianguloIsoseles triangulo1 = new TrianguloIsoseles(8, 5);
 
@@ -37,7 +45,6 @@ public class Main {
 
         buscarTrianguloMayor(miLista, aux);
     }
-
     public static void buscarTrianguloMayor(List<TrianguloIsoseles> lista, TrianguloIsoseles aux) {
 
         for (TrianguloIsoseles triangulo : lista) {
