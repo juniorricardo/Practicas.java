@@ -1,8 +1,7 @@
-package Javier.Triangulo;
-
-import java.math.*;
+package Javier.Matematica;
 
 public class TrianguloIsoseles {
+    
     private float lado;
     private float base;
     private float altura;
@@ -13,19 +12,6 @@ public class TrianguloIsoseles {
         this.altura = (float) (Math.sqrt(Math.pow(lado, 2) - (Math.pow(base, 2) / 4)));
     }
     public TrianguloIsoseles(){ }
-
-    public float getLado() {
-        return lado;
-    }
-
-    public float getBase() {
-        return base;
-    }
-
-    public float getAltura() {
-        return altura;
-    }
-
 
     public float calcularArea() {
         return (this.base * this.altura) / 2;

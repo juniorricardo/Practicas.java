@@ -1,24 +1,30 @@
-package Javier.Triangulo;
+package Javier.Matematica;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        //trianguloCalculo();
 
-        RandomPolinomio elemento = new RandomPolinomio(3);
-        elemento.generar();
-        System.out.println("f(x) = " + elemento.getPolinomio());
-
-        elemento.calcular();
-
+        polinomio();
 
     }
 
-    //Triangulo
-    public static void trianguloCalculo(){
+    //>Polinomio<
+    public static void polinomio(){
+        RandomPolinomio dos = new RandomPolinomio(5);
+        dos.generar();
+        System.out.println("f(x) = " + dos.getPoligono());
+        int variable = new Scanner(System.in).nextInt();
+        System.out.println("Resultado del polinomio con \'x = " + variable + "' es : " + dos.resolver(variable));
+    }
+
+    //>Triangulo<
+    public static void trianguloCalculo() {
         TrianguloIsoseles triangulo1 = new TrianguloIsoseles(8, 5);
 
         System.out.println("miTriangulo.calcularArea() = " + triangulo1.calcularArea());
@@ -45,13 +51,13 @@ public class Main {
 
         buscarTrianguloMayor(miLista, aux);
     }
-    public static void buscarTrianguloMayor(List<TrianguloIsoseles> lista, TrianguloIsoseles aux) {
+    private static void buscarTrianguloMayor(List<TrianguloIsoseles> lista, TrianguloIsoseles aux) {
 
         for (TrianguloIsoseles triangulo : lista) {
             if (triangulo.compararPerimetro(aux) && triangulo.compararArea(aux))
                 aux = triangulo;
         }
-        System.out.println("Mayor" + aux.toString());
+        System.out.println("Mayor" + aux);
     }
 
 }
