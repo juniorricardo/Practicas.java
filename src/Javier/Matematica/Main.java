@@ -21,6 +21,7 @@ public class Main {
         System.out.println("f(x) = " + dos.getPoligono());
         int variable = new Scanner(System.in).nextInt();
         System.out.println("Resultado del polinomio con \'x = " + variable + "' es : " + dos.resolver(variable));
+
     }
 
     //>Triangulo<
