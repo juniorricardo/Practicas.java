@@ -109,8 +109,8 @@ AND Ventas.Fecha BETWEEN '20190901' AND '20190930';
 -- 7. Redacte una consulta que obtenga los ingresos de todas las sucursales durante la primera quincena de noviembre, y las ordene de menor a mayor
 SELECT v.IdSucursal, s.Barrio, SUM(v.MontoTotal) AS Total
 FROM Ventas AS v 
-INNER JOIN Sucursales AS s
-ON v.IdSucursal = s.IdSucursal
+    INNER JOIN Sucursales AS s
+    ON v.IdSucursal = s.IdSucursal
 WHERE v.Fecha BETWEEN '20190901' AND '20190915'
-GROUP BY IdSucursal;
-ORDER BY Total ASC;
+    GROUP BY IdSucursal;
+    ORDER BY Total ASC;
